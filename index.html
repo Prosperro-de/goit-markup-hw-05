@@ -44,8 +44,13 @@
     <!-- Герой -->
     <section class="hero">
       <div class="container hero-inner">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1> <button class="hero-btn"
-          type="button">Заказать услугу</button>
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1> 
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal" > 
+              <button class="close-modal" data-modal-close> X </button>
+            </div>
+          </div>
       </div>
     </section>
     <!-- Список преимуществ -->
@@ -379,6 +384,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
